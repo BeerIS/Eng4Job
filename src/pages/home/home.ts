@@ -11,4 +11,9 @@ export class HomePage {
 
   }
 
+  enterDailyQuest()
+  {
+    this.navCtrl.push("DailyQuestRulesPage");
+  }
+
 }
