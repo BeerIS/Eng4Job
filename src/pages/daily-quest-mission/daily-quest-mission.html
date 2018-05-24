@@ -14,5 +14,43 @@
 
 
 <ion-content padding>
-
+  <div text-right>
+    Time Remains: 00:99
+  </div>
+  <div>
+    <strong>Mission 1: </strong> <ion-icon name="headset"></ion-icon>
+  </div>
+  <div style="padding: 10px;height:40px;">
+    <div style="border: 1px solid black" text-center>
+      Media Player here
+    </div>
+  </div>
+  <div>
+    <p>
+      <strong>Question:</strong> What does the man want to do?
+    </p>
+    <ion-list radio-group>
+      <ion-item>
+          <ion-label>A. A cat</ion-label>
+          <ion-radio value="a"></ion-radio>
+      </ion-item>
+      <ion-item>
+          <ion-label>B. A bat</ion-label>
+          <ion-radio value="b"></ion-radio>
+      </ion-item>
+      <ion-item>
+          <ion-label>C. A rat</ion-label>
+          <ion-radio value="c"></ion-radio>
+      </ion-item>
+    </ion-list>
+  </div>
+  <div text-right>
+    Mission 1 of 3
+  </div>
+  <div text-center style="margin-top: 10px;">
+      <button ion-button round icon-right (click)="viewMissionStatus()">
+          Next Mission
+          <ion-icon name="arrow-dropright"></ion-icon>
+        </button>
+  </div>  
 </ion-content>
